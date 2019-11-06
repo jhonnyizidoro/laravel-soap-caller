@@ -3,7 +3,7 @@
 ```php
 use App\Helpers\SoapClient;
 
-$response = SoapClient::wsdl('https://github.com/service?wsdl')
+$response = PHPSoapClient::wsdl('https://github.com/service?wsdl')
 ->parameters([
   'LOGIN' => [
     'USER' => 'jhonnyizidoro',
@@ -15,7 +15,7 @@ $response = SoapClient::wsdl('https://github.com/service?wsdl')
 
 ## Available options
 ```php
-SoapClient::wsdl('wsdl url')
+PHPSoapClient::wsdl('wsdl url')
 ->parameters(['array of data'])
 ->call('function to call');
 ->location('location url')
