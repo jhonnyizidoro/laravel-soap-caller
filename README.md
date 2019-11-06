@@ -1,7 +1,7 @@
 # How to use?
 
 ```php
-use App\Helpers\SoapClient;
+use App\Helpers\PHPSoapClient;
 
 $response = PHPSoapClient::wsdl('https://github.com/service?wsdl')
 ->parameters([
